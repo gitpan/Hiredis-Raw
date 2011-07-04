@@ -1,8 +1,11 @@
 build/IFiles.pm
+Changes
 hiredis.xs
+inc/Devel/CheckLib.pm
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
+inc/Module/Install/CheckLib.pm
 inc/Module/Install/Compiler.pm
 inc/Module/Install/Fetch.pm
 inc/Module/Install/Makefile.pm
