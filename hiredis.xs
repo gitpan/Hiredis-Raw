@@ -60,7 +60,8 @@ SV* redisReplyToSV(redisReply *reply){
                     av_push(array, result);
                     result = NULL;
                 }
-                result = newRV_inc((SV *)array);
+                result = newRV_noinc((SV *)array);
+
                 break;
 
             default:
@@ -119,7 +120,7 @@ void redisPerlCleanup(void *privdata) {
     Safefree(e);
 }
 
-void redisConnectHandleCallback(const struct redisAsyncContext *ac) {
+void redisConnectHandleCallback(const struct redisAsyncContext *ac, int status) {
 }
 
 void redisDisconnectHandleCallback(const struct redisAsyncContext *ac, int status) {
