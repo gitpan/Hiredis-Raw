@@ -3,19 +3,20 @@ abstract: 'Perl binding for asychronous hiredis API'
 author:
   - 'Whitney Jackson C<< <whitney@cpan.org> >>'
 build_requires:
+  ExtUtils::Depends: 0
   ExtUtils::MakeMaker: 6.59
   File::Which: 0
   Test::Exception: 0
   Test::More: 0
   Test::TCP: 0
+  XS::Object::Magic: 0.04
 configure_requires:
   ExtUtils::Depends: 0
   ExtUtils::MakeMaker: 6.59
   XS::Object::Magic: 0.04
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
-license: perl_5
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -27,5 +28,5 @@ no_index:
 requires:
   Sub::Exporter: 0
   XS::Object::Magic: 0
-  perl: 5.10.0
+  perl: 5.010
 version: 0.04

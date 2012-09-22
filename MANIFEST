@@ -1,5 +1,6 @@
 build/IFiles.pm
 Changes
+Hiredis-Raw-0.04.tar.gz
 hiredis.xs
 inc/Devel/CheckLib.pm
 inc/Module/Install.pm
@@ -19,6 +20,8 @@ Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
 META.yml
+MYMETA.json
+MYMETA.yml
 ppport.h
 README
 t/async.t
