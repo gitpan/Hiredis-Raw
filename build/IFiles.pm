@@ -1,14 +1,14 @@
 package Hiredis::Raw::Install::Files;
 
 $self = {
-          'inc' => '-I/usr/local/include/hiredis',
+          'inc' => '-I/usr/include/hiredis',
           'typemaps' => [
                           'typemap'
                         ],
           'deps' => [
                       'XS::Object::Magic'
                     ],
-          'libs' => '-L/usr/local/lib -lhiredis'
+          'libs' => '-L/usr/lib -lhiredis'
         };
 
 

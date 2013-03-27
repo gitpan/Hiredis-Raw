@@ -1,37 +1,3 @@
-package Hiredis::Async;
-BEGIN {
-    $Hiredis::Async::VERSION = '0.05';
-}
-use strict;
-use warnings;
-use Hiredis::Raw;
-
-sub new {
-    my ($class, %connect_args) = @_;
-
-    my $self = bless {}, $class;
-
-    $self->Connect(
-        $connect_args{host},
-        $connect_args{port},
-        $connect_args{addRead},
-        $connect_args{delRead},
-        $connect_args{addWrite},
-        $connect_args{delWrite},
-    );
-
-    return $self;
-}
-
-sub DESTROY {
-    my $self = shift;
-    $self->Disconnect if $self->IsAllocated;
-}
-
-1;
-
-__END__
-
 =pod
 
 =head1 NAME
@@ -188,4 +154,6 @@ Jonathan Rockway C<< <jrockway@cpan.org> >>
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
 
+
 =cut
+

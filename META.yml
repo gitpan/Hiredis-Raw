@@ -28,4 +28,4 @@ requires:
   Sub::Exporter: 0
   XS::Object::Magic: 0
   perl: 5.10.0
-version: 0.04
+version: 0.05
